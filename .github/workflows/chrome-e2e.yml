@@ -15,11 +15,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Start dev server
+        run: npm run dev 
+
+      - name: Wait for dev server to start
+        run: npx wait-on http://localhost:3000 
+
       - name: E2E Testing 🤖
         uses: cypress-io/github-action@v2
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
           record: true
           start: yarn run dev
