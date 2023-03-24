@@ -1,5 +1,5 @@
 name: Cypress Tests with Install Job and UI Chrome Job
-
+#yala
 on:
   push:
     branches:
