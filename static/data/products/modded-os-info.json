@@ -1,0 +1,64 @@
+{
+  "info": [
+    {
+      "features": [
+        "Pre-installed apps like VS-Code, Firefox and Chromium",
+        "Themed and icon pack pre-applied.",
+        "Mitigated most of the significant errors.",
+        "More performant than standard Andronix distributions.formant than normal Andronix distros."
+      ],
+      "name": "Ubuntu XFCE",
+      "logo_text": "UX",
+      "id": "ubuntu_xfce",
+      "color": "primary-400",
+      "description": "If you're looking for a stable distro with some reasonable customization options which is also the world's most popular distribution, look no further than Ubuntu.",
+      "version": "20.04",
+      "stability": 100
+    },
+    {
+      "name": "Manjaro XFCE",
+      "color": "green-400",
+      "logo_text": "MX",
+      "features": [
+        "Pre-installed apps like VS-Code, Firefox and Chromium",
+        "Themed and icon pack pre-applied.",
+        "Mitigated most of the significant errors.",
+        "More performant than standard Andronix distributions.formant than normal Andronix distros."
+      ],
+      "id": "manjaro_xfce",
+      "description": "Manjaro is a distribution based on Arch Linux but has a separate official repository that contains more stable packages than Arch Linux's. You can't go wrong with Pacman and Manjaro.",
+      "version": "19.00",
+      "stability": 80
+    },
+    {
+      "name": "Debian XFCE",
+      "color": "pink-400",
+      "logo_text": "DX",
+      "features": [
+        "Pre-installed apps like VS-Code, Firefox and Chromium",
+        "Themed and icon pack pre-applied.",
+        "Mitigated most of the significant errors.",
+        "More performant than standard Andronix distributions.formant than normal Andronix distros."
+      ],
+      "id": "debian_xfce",
+      "description": "Debian Linux is considered one of the most stable Linux distributions out there. Therefore, you can entirely rely on Debian for the stability and performance you might need for your day-to-day tasks.",
+      "version": "10.00",
+      "stability": 100
+    },
+    {
+      "name": "Ubuntu KDE",
+      "color": "blue-400",
+      "features": [
+        "Pre-installed apps like VS-Code, Firefox and Chromium",
+        "Themed and icon pack pre-applied.",
+        "Mitigated most of the significant errors.",
+        "More performant than standard Andronix distributions.formant than normal Andronix distros."
+      ],
+      "id": "ubuntu_kde",
+      "logo_text": "UK",
+      "description": "Ubuntu again being one of the reliable distributions of there but the star of the show is the beautiful KDE desktop environment. From smooth animations to just a better UX overall, KDE has got you covered with everything.",
+      "version": "19.04",
+      "stability": 90
+    }
+  ]
+}
