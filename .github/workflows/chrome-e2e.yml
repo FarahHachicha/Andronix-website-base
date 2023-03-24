@@ -1,66 +1,61 @@
-name: Cypress Tests with Install Job and UI Chrome Job
-
+name: Chrome E2E CI
 on:
   push:
     branches:
       - main
+
 jobs:
-  install:
+  test:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome87-ff82
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Cache Cypress binary
-        uses: cypress-io/cache@v2
-        with:
-          cache-folder: /github/home/.cache/Cypress
-      - name: Install Cypress
-        run: cypress install
-
-
-      - name: Save build folder
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          if-no-files-found: error
-          path: dist
-
-  ui-chrome-tests:
-    runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome87-ff82
-    needs: install
     strategy:
       fail-fast: false
       matrix:
-        # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
+        containers: [ 1, 2, 3 ]
+    name: E2E on Chrome
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checking out code ⚡
+        uses: actions/checkout@v2
 
-      - name: Download the build folders
-        uses: actions/download-artifact@v3
+      - name: Setting up NodeJS 📐
+        uses: actions/setup-node@v1
         with:
-          name: build
-          path: dist
+          node-version: '16.16.0'
 
-      - name: 'UI Tests - Chrome'
-        uses: cypress-io/github-action@v5.5.1 # use the explicit version number
+      - name: Caching Dependencies 💾
+        uses: actions/cache@v1
         with:
-          # we have already installed all dependencies above
-          install: false
-          start: yarn start:ci
-          wait-on: 'http://localhost:3000'
-          wait-on-timeout: 120
-          browser: chrome
-          record: true
-          parallel: true
-          group: 'UI - Chrome'
-          spec: cypress/tests/ui/*
+          path: ~/.npm
+          key: ${{ runner.os }}-node-v2-${{ hashFiles('**/yarn-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Building 🏗
+        run: |
+          npm install -g yarn
+          yarn install --frozen-lockfile
+          yarn install
+      - name: E2E Testing 🤖
+        uses: cypress-io/github-action@v2
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          # Recommended: pass the GitHub token lets this action correctly
-          # determine the unique run id necessary to re-run the checks
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          record: true
+          start: yarn run dev
+          parallel: true
+          browser: chrome
+          wait-on-timeout: 180
+          wait-on: 'http://localhost:3000'
+
+      - name: Uploading Screenshots ☁
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - name: Uploading Videos ☁
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
