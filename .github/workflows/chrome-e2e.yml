@@ -11,13 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Cache Cypress binary
-        uses: cypress-io/github-action@v2
-        with:
-          cache-folder: /github/home/.cache/Cypress
-      - name: Install Cypress
-        run: cypress install
       - name: Cypress install
         uses: cypress-io/github-action@v5.5.1 # use the explicit version number
         with:
