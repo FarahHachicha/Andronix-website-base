@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tutorials/termux", {data:[{}],fetch:{},mutations:[]});

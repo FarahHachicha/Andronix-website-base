@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/auth/register", {data:[{}],fetch:{},mutations:[["auth\u002FSET_USER_INFO",null],["auth\u002FSET_LOGGED_IN_STATE",false]]});

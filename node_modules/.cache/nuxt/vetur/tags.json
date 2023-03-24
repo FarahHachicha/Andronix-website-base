@@ -1,0 +1,68 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/global/footer.vue"
+  },
+  "Heading": {
+    "description": "Auto imported from components/global/heading.vue"
+  },
+  "NavBar": {
+    "description": "Auto imported from components/global/navBar.vue"
+  },
+  "Overlay": {
+    "description": "Auto imported from components/global/overlay.vue"
+  },
+  "SideBar": {
+    "description": "Auto imported from components/global/sideBar.vue"
+  },
+  "Landing": {
+    "description": "Auto imported from components/landing.vue"
+  },
+  "PricingCard": {
+    "description": "Auto imported from components/pricingCard.vue"
+  },
+  "TeamCard": {
+    "description": "Auto imported from components/teamCard.vue"
+  },
+  "BaseCounterComponent": {
+    "description": "Auto imported from components/base/counterComponent.vue"
+  },
+  "BaseCtaCard": {
+    "description": "Auto imported from components/base/ctaCard.vue"
+  },
+  "BasePrimaryIconButton": {
+    "description": "Auto imported from components/base/primaryIconButton.vue"
+  },
+  "BasePrimaryTextButton": {
+    "description": "Auto imported from components/base/primaryTextButton.vue"
+  },
+  "LandingDeLogoGrid": {
+    "description": "Auto imported from components/landing/deLogoGrid.vue"
+  },
+  "LandingDistroLogoGrid": {
+    "description": "Auto imported from components/landing/distroLogoGrid.vue"
+  },
+  "LandingFeature": {
+    "description": "Auto imported from components/landing/feature.vue"
+  },
+  "LandingFeatureCard": {
+    "description": "Auto imported from components/landing/featureCard.vue"
+  },
+  "LandingHeader": {
+    "description": "Auto imported from components/landing/landingHeader.vue"
+  },
+  "LandingProductComponent": {
+    "description": "Auto imported from components/landing/productComponent.vue"
+  },
+  "LandingWmLogoGrid": {
+    "description": "Auto imported from components/landing/wmLogoGrid.vue"
+  },
+  "StepsCard": {
+    "description": "Auto imported from components/steps/stepsCard.vue"
+  },
+  "TestimonialCard": {
+    "description": "Auto imported from components/testimonial/testimonialCard.vue"
+  },
+  "TestimonialModdedOsCard": {
+    "description": "Auto imported from components/testimonial/testimonialModdedOsCard.vue"
+  }
+}

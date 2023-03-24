@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/products/modded-os", {data:[{}],fetch:{},mutations:[]});

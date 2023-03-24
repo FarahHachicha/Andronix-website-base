@@ -1,0 +1,135 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/asus/Andronix-website-base/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_5694844a"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/home/asus/Andronix-website-base/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_06016e1d"
+  },
+  {
+    "name": "help",
+    "path": "/help",
+    "component": "/home/asus/Andronix-website-base/pages/help.vue",
+    "chunkName": "pages/help",
+    "_name": "_6ae01414"
+  },
+  {
+    "name": "policies",
+    "path": "/policies",
+    "component": "/home/asus/Andronix-website-base/pages/policies.vue",
+    "chunkName": "pages/policies",
+    "_name": "_642e7dba"
+  },
+  {
+    "name": "pricing",
+    "path": "/pricing",
+    "component": "/home/asus/Andronix-website-base/pages/pricing.vue",
+    "chunkName": "pages/pricing",
+    "_name": "_6070a6c3"
+  },
+  {
+    "name": "auth-login",
+    "path": "/auth/login",
+    "component": "/home/asus/Andronix-website-base/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_10795855"
+  },
+  {
+    "name": "auth-register",
+    "path": "/auth/register",
+    "component": "/home/asus/Andronix-website-base/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_51413732"
+  },
+  {
+    "name": "legal-privacy-policy",
+    "path": "/legal/privacy-policy",
+    "component": "/home/asus/Andronix-website-base/pages/legal/privacy-policy.vue",
+    "chunkName": "pages/legal/privacy-policy",
+    "_name": "_10693200"
+  },
+  {
+    "name": "legal-refund-policy",
+    "path": "/legal/refund-policy",
+    "component": "/home/asus/Andronix-website-base/pages/legal/refund-policy.vue",
+    "chunkName": "pages/legal/refund-policy",
+    "_name": "_3e91e24e"
+  },
+  {
+    "name": "legal-terms-conditions",
+    "path": "/legal/terms-conditions",
+    "component": "/home/asus/Andronix-website-base/pages/legal/terms-conditions.vue",
+    "chunkName": "pages/legal/terms-conditions",
+    "_name": "_a09e3c32"
+  },
+  {
+    "name": "products-commands",
+    "path": "/products/commands",
+    "component": "/home/asus/Andronix-website-base/pages/products/commands.vue",
+    "chunkName": "pages/products/commands",
+    "_name": "_758d6910"
+  },
+  {
+    "name": "products-modded-os",
+    "path": "/products/modded-os",
+    "component": "/home/asus/Andronix-website-base/pages/products/modded-os.vue",
+    "chunkName": "pages/products/modded-os",
+    "_name": "_c77393d0"
+  },
+  {
+    "name": "products-premium",
+    "path": "/products/premium",
+    "component": "/home/asus/Andronix-website-base/pages/products/premium.vue",
+    "chunkName": "pages/products/premium",
+    "_name": "_6810e102"
+  },
+  {
+    "name": "tutorials-termux",
+    "path": "/tutorials/termux",
+    "component": "/home/asus/Andronix-website-base/pages/tutorials/termux.vue",
+    "chunkName": "pages/tutorials/termux",
+    "_name": "_5052fedc"
+  },
+  {
+    "name": "user-profile",
+    "path": "/user/profile",
+    "component": "/home/asus/Andronix-website-base/pages/user/profile.vue",
+    "chunkName": "pages/user/profile",
+    "_name": "_59014190"
+  },
+  {
+    "name": "checkout-buy-product_id",
+    "path": "/checkout/buy/:product_id?",
+    "component": "/home/asus/Andronix-website-base/pages/checkout/buy/_product_id.vue",
+    "chunkName": "pages/checkout/buy/_product_id",
+    "_name": "_0a90e50b"
+  },
+  {
+    "name": "checkout-success-order_id",
+    "path": "/checkout/success/:order_id?",
+    "component": "/home/asus/Andronix-website-base/pages/checkout/success/_order_id.vue",
+    "chunkName": "pages/checkout/success/_order_id",
+    "_name": "_45d82d89"
+  },
+  {
+    "name": "checkout-failure-reason-order_id",
+    "path": "/checkout/failure/:reason?/:order_id?",
+    "component": "/home/asus/Andronix-website-base/pages/checkout/failure/_reason/_order_id.vue",
+    "chunkName": "pages/checkout/failure/_reason/_order_id",
+    "_name": "_34bad424"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/asus/Andronix-website-base/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_764c5f0f"
+  }
+]
