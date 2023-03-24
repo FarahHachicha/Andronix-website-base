@@ -11,7 +11,7 @@
     "lint": "yarn run lint:js",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
-    "start:ci": "yarn run dev"
+    "start:ci": "run dev"
   },
   "dependencies": {
     "@animxyz/core": "0.6.6",
