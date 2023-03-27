@@ -15,25 +15,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: E2E Testing 🤖
-        uses: cypress-io/github-action@v2
-        with:
-          record: true
-          start: yarn run dev
-          parallel: true
-          browser: chrome
-          wait-on-timeout: 180
-          wait-on: 'http://localhost:3000'
-
       - name: Cypress run
-        uses: cypress-io/github-action@v2.7.2
-        with:
-          browser: chrome
-          record: true
-          parallel: true
-          group: 'Cypress Tests'
-          spec: cypress/integration/*.spec.js
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        run : cypress run --record --key 6add9d0e-1b93-463d-8537-f40609eaee98
 
