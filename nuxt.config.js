@@ -105,7 +105,7 @@ export default {
     '@nuxtjs/axios',
     ['@nuxtjs/recaptcha', {
       hideBadge: true,
-      siteKey: '6LdFXUgaAAAAALL5FTDtMLppqC7yq4f0veevt_ad',
+      siteKey: '6add9d0e-1b93-463d-8537-f40609eaee98',
       version: 2,
     }]
   ],
