@@ -1,28 +1,19 @@
-name: Cypress Tests with installation job
+name: Cypress Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  install:
+   build:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node12.18.3-chrome87-ff82
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Cypress install
-        uses: cypress-io/github-action@v3 # use the explicit version number
-        with:
-          # Disable running of tests within install job
-          runTests: false
-          build: yarn build
-
-      - name: Save build folder
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          if-no-files-found: error
-          path: build
+      - name: Install dependencies
+        run: npm ci
   ui-chrome-tests:
     runs-on: ubuntu-latest
     container: cypress/browsers:node12.18.3-chrome87-ff82
@@ -34,18 +25,18 @@ jobs:
         containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Download the build folders
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v2
         with:
           name: build
           path: build
-
-      - name: 'UI Tests - Chrome'
-        uses: cypress-io/github-action@v3 # use the explicit version number
+ 
+      
+      - name: Cypress run
+        uses: cypress-io/github-action@v2.7.2
         with:
-          # we have already installed all dependencies above
           install: false
           start: yarn start:ci
           wait-on: 'http://localhost:3000'
