@@ -2,7 +2,7 @@ name: Chrome E2E CI
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
